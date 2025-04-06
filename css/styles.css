@@ -103,7 +103,7 @@ body.dark-mode {
 
 /* Hero Section */
 .hero {
-    background: url('images/bg.png') center/cover no-repeat;
+    background: url('../images/bg.png') center/cover no-repeat;
     height: 500px;
     display: flex;
     align-items: center;
@@ -123,7 +123,7 @@ body.dark-mode {
 
 /* Dark Mode for Hero Section */
 body.dark-mode .hero {
-    background: url('images/bg.png') center/cover no-repeat;
+    background: url('../images/bg-dark.png') center/cover no-repeat;
 }
 
 /* Call to Action */
