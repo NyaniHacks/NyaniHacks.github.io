@@ -695,3 +695,33 @@ textarea:autofill {
   color: #fff !important;
   caret-color: #fff !important;
 }
+
+/* Force input background and text color — mobile safe */
+input,
+textarea {
+  background-color: transparent !important;
+  color: #fff !important;
+  caret-color: #fff;
+  -webkit-text-fill-color: #fff !important; /* mobile autofill */
+}
+
+/* Handle autofill bg and text */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus {
+  box-shadow: 0 0 0 1000px #1a1a1a inset !important;
+  -webkit-box-shadow: 0 0 0 1000px #1a1a1a inset !important;
+  -webkit-text-fill-color: #fff !important;
+  caret-color: #fff;
+  border-bottom: 2px solid #6a82fb; /* optional for better visibility */
+}
+
+/* Optional for Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill {
+  background-color: #1a1a1a !important;
+  color: #fff !important;
+  caret-color: #fff;
+}
+
