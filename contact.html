@@ -17,7 +17,7 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #111, #1a1a1a);
-      color: #1b263b;
+      color: #fff;
       margin: 0;
       padding: 0;
     }
@@ -58,9 +58,15 @@
       border: none;
       border-bottom: 2px solid #aaa;
       background: transparent;
-      color: inherit;
+      color: #fff;
       font-size: 16px;
       outline: none;
+    }
+
+    /* Optional: Make placeholder visible while typing */
+    .input-group input::placeholder,
+    .input-group textarea::placeholder {
+       color: #ccc;
     }
 
     .input-group label {
