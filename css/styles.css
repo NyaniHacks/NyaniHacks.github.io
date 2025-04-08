@@ -689,3 +689,9 @@ textarea:-webkit-autofill {
   -webkit-text-fill-color: #fff !important;
 }
 
+input:autofill,
+textarea:autofill {
+  background-color: #1a1a1a !important;
+  color: #fff !important;
+  caret-color: #fff !important;
+}
