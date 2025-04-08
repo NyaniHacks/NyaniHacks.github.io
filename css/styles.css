@@ -682,3 +682,10 @@ body.dark-mode .contact-form textarea:focus + label {
 body.dark-mode footer {
     background: #0a192f;
 }
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #1a1a1a inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
