@@ -150,22 +150,25 @@
 
   <main>
     <section class="contact-container">
-      <form class="contact-form" data-aos="fade-up">
-        <h2>Get in Touch</h2>
-        <div class="input-group">
-          <input type="text" id="name" name="name" placeholder=" " required>
-          <label for="name">Name</label>
-        </div>
-        <div class="input-group">
-          <input type="email" id="email" name="email" placeholder=" " required>
-          <label for="email">Email</label>
-        </div>
-        <div class="input-group">
-          <textarea id="message" name="message" placeholder=" " required></textarea>
-          <label for="message">Message</label>
-        </div>
-        <button type="submit" class="cta-button">Send</button>
-      </form>
+        <form class="contact-form" action="https://formspree.io/f/xqapgjwp" method="POST">
+            <div class="input-group">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" name="message" required></textarea>
+                <label for="message">Message</label>
+            </div>
+        
+            <!-- Optional Redirect After Submission -->
+            <input type="hidden" name="_redirect" value="thankyou.html">
+        
+            <button type="submit" class="cta-button">Send</button>
+        </form>        
 
       <div class="map-container" data-aos="fade-left">
         <h2>Find Us</h2>
